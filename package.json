@@ -1,7 +1,7 @@
 {
   "name": "website-brtech",
   "version": "0.1.0",
-  "homepage": "./",
+  "homepage": "website-brtech/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
