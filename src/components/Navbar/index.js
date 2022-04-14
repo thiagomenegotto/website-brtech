@@ -82,7 +82,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavItemBtn>
-              <NavBtnLink to='/contact'>
+              <NavBtnLink to='https://wa.me/5542988044920'>
                 Contato
               </NavBtnLink>
             </NavItemBtn>
