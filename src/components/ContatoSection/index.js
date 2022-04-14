@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
-//import { Button } from '../Button.elements';
+
 import { 
   ContactContainer, 
   ContactWrapper,
@@ -21,7 +21,6 @@ import {
   ResultWrap,
   Button
 } from './Contact.elements';
-import { hasSelectionSupport } from '@testing-library/user-event/dist/utils';
 
 const ContactSection = ({
   darkBg,
@@ -31,10 +30,7 @@ const ContactSection = ({
   headLine,
   darkDesc,
   description,
-  buttonLabel,
-  primary,
-  dark,
-  dark2
+  buttonLabel
 }) => {
 
   const form = useRef();
