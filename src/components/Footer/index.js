@@ -1,6 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll} from 'react-scroll';
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
 
 import { 
   FooterContainer, 
@@ -56,11 +56,11 @@ const Footer = () => {
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Social Media</FooterLinkTitle>
-                <FooterLink to='/'>Instagram</FooterLink>
-                <FooterLink to='/'>Facebook</FooterLink>
-                <FooterLink to='/'>Youtube</FooterLink>
-                <FooterLink to='/'>Twitter</FooterLink>
-                <FooterLink to='/'>LinkedIn</FooterLink>
+                <FooterLink href="https://www.instagram.com/thiago.menegotto/" target="_blank">Instagram</FooterLink>
+                <FooterLink href="https://www.facebook.com/brtech.net.br" target="_blank">Facebook</FooterLink>
+                <FooterLink href="https://wa.me/5542988044920" target="_blank">Whatsapp</FooterLink>
+                <FooterLink to='/'>Youtuber</FooterLink>
+                <FooterLink href="https://www.linkedin.com/in/thiago-menegotto-5715a99b/" target="_blank">LinkedIn</FooterLink>
             </FooterLinkItems>  
           </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -69,19 +69,19 @@ const Footer = () => {
             <SocialLogo to='/' onClick={toggleHome}>BRTECH</SocialLogo>
             <WebsiteRights>BRTECH c {new Date().getFullYear()} All rights reserved.</WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink href="https://www.facebook.com/brtech.net.br" target="_blank" aria-label="Facebook">
                 <FaFacebook/>
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <SocialIconLink href="https://www.instagram.com/thiago.menegotto/" target="_blank" aria-label="Instagram">
                 <FaInstagram/>
+              </SocialIconLink>
+              <SocialIconLink href="https://wa.me/5542988044920" target="_blank" aria-label="Whatsapp">
+                <FaWhatsapp/>
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="Youtube">
                 <FaYoutube/>
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                <FaTwitter/>
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+              <SocialIconLink href="https://www.linkedin.com/in/thiago-menegotto-5715a99b/" target="_blank" aria-label="Linkedin">
                 <FaLinkedin/>
               </SocialIconLink>
             </SocialIcons>
