@@ -14,7 +14,7 @@ export const ContactContainer = styled.div`
 export const ContactWrapper = styled.div`
   display: grid;
   z-index: 1;
-  max-height: 700px;
+  max-height: 800px;
   width: 100%;
   max-width: 1150px;
   margin-right: auto;
@@ -161,6 +161,13 @@ export const Input = styled.input`
   }
 `;
 
+export const ResultWrap = styled.div`
+  width: 100%;
+  font-weight: 700;
+  color: #000;
+  padding-top: 20px;
+`;
+
 export const Textarea = styled.textarea`
   max-width: 100%;
   min-width: 100%;
@@ -187,4 +194,26 @@ export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
   margin-top: 20px;
+`;
+
+export const Button = styled.input`
+    border-radius: 50px;
+    background: ${({primary}) => (primary ? '#01BF71' : '#010606')};
+    white-space: nowrap;
+    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+    color: ${({ dark }) => (dark ? '#010606' : '#fff')};
+    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //max-width: 50%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transition: all 0.2s ease-out;
+      background: ${({primary}) => (primary ? '#fff' : '#01BF71')};
+    }
 `;

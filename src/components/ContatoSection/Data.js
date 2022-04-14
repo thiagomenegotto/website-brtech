@@ -6,7 +6,7 @@ export const contactData = {
   topLine: 'Pronto para começar?',
   headLine: 'Vamos juntos fazer seu projeto sair do papel',
   description: 'Solicite agora mesmo uma proposta e conte com a nossa agência para realiza-lo.',
-  buttonLabel: 'Get started',
+  buttonLabel: 'Enviar',
   img: require('../../images/svg-8.png'),
   alt: 'Contact',
   dark: false,

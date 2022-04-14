@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import { Button } from '../Button.elements';
+//import { Button } from '../Button.elements';
 import { 
   ContactContainer, 
   ContactWrapper,
@@ -16,8 +17,11 @@ import {
   Form,
   Label,
   Input,
-  Textarea
+  Textarea,
+  ResultWrap,
+  Button
 } from './Contact.elements';
+import { hasSelectionSupport } from '@testing-library/user-event/dist/utils';
 
 const ContactSection = ({
   darkBg,
@@ -33,6 +37,7 @@ const ContactSection = ({
   dark2
 }) => {
 
+  const form = useRef();
   const Result = () => {
     return (
       <p>Sua mensagem foi enviada com sucesso! Em breve iremos entrar em contato.</p>
@@ -47,7 +52,7 @@ const ContactSection = ({
       .sendForm(
         "service_mrm4ubc",
         "template_drxnst8",
-        e.target,
+        form.current,
         "IEnLS03dYgDcZ9Wl7"
       )
       .then(
@@ -61,6 +66,8 @@ const ContactSection = ({
       );
     e.target.reset();
     showResult(true);
+    setTimeout(() => showResult(false), 5000);
+    
   };
 
   return (
@@ -77,19 +84,21 @@ const ContactSection = ({
             </Column1>
             <Column2>
               <FormWrapper>
-                <Form onSubmit={sendEmail}>
-                  <Label>Name</Label>
-                  <Input type="text" name="name" />
+                <Form ref={form} onSubmit={sendEmail}>
+                  <Label>Nome</Label>
+                  <Input type="text" name="fullName" required/>
                   <Label>Email</Label>
-                  <Input type="email" name="email" />
-                  <Label>Message</Label>
-                  <Textarea name="message" />
+                  <Input type="email" name="email" required/>
+                  <Label>Telefone</Label>
+                  <Input type="phone" name="phone" required/>
+                  <Label>Mensagem</Label>
+                  <Textarea name="message" required/>
                   <BtnWrap>
-                    <Button>{buttonLabel}</Button>
+                    <Button type="submit" value={buttonLabel}></Button>
                   </BtnWrap>
-                  <Result>
+                  <ResultWrap>
                     {result ? <Result/> : null }  
-                  </Result>
+                  </ResultWrap>
                 </Form>
               </FormWrapper>
             </Column2>
