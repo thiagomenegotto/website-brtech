@@ -24,10 +24,9 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to='service' onClick={toggle}>Serviços</SidebarLink>
           <SidebarLink to='portfolio' onClick={toggle}>Portfolio</SidebarLink>
           <SidebarLink to='pricing' onClick={toggle}>Orçamneto</SidebarLink>
-          <SidebarLink to='contact' onClick={toggle}>Contato</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='/contact'>Me chame</SidebarRoute>
+          <SidebarRoute href="https://wa.me/5542988044920" target="_black">Me chame</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
