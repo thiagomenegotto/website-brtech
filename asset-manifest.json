@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/website-brtech/static/js/main.e0fa2908.js",
+    "main.js": "/website-brtech/static/js/main.1aaa685b.js",
     "static/media/svg-2.svg": "/website-brtech/static/media/svg-2.a735a369350afff2a588d0314f78c3c0.svg",
     "static/media/svg-1.png": "/website-brtech/static/media/svg-1.6b091c53dc53acf4c4ea.png",
     "static/media/svg-8.png": "/website-brtech/static/media/svg-8.fcc20b80904133a1b288.png",
@@ -12,9 +12,9 @@
     "static/media/svg-1.svg": "/website-brtech/static/media/svg-1.7e211a9f0343b107a62cb9e9d38a96e4.svg",
     "static/media/svg-7.svg": "/website-brtech/static/media/svg-7.514dff21071c9b9a3c38e5474303a68f.svg",
     "index.html": "/website-brtech/index.html",
-    "main.e0fa2908.js.map": "/website-brtech/static/js/main.e0fa2908.js.map"
+    "main.1aaa685b.js.map": "/website-brtech/static/js/main.1aaa685b.js.map"
   },
   "entrypoints": [
-    "static/js/main.e0fa2908.js"
+    "static/js/main.1aaa685b.js"
   ]
 }
