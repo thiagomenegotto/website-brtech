@@ -5,7 +5,7 @@ import { device } from '../../responsive';
 export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
-  background: ${({ lightBg }) => (lightBg ? '#fff' : '#000')};
+  background: ${({ lightBg }) => (lightBg ? '#f8f9fa' : '#020d17')};
   padding: 0;
 `;
 
@@ -107,7 +107,7 @@ export const Heading = styled.h1`
   margin-bottom: 40px;
   font-size: 48px;
   line-height: 1.1;
-  color: ${({ lightText }) => (lightText ? '#fff' : '#000')};
+  color: ${({ lightText }) => (lightText ? '#fff' : '#0d0f10')};
 
   @media ${device.tablet} {
     font-size: 32px;
@@ -123,7 +123,7 @@ export const Subtitle = styled.p`
   margin-bottom: 80px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? '#fff' : '#000')};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? '#fff' : '#0d0f10')};
 
   @media ${device.tablet} {
     margin-bottom: 60px;

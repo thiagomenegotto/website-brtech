@@ -9,7 +9,7 @@ export const PortfolioContainer = styled.div`
   //flex-direction: column;
   //justify-content: center;
   //align-items: center;
-  background: #000;
+  background: var(--secondary-dark);
 
   @media ${device.tablet} {
     max-height: 1300px;
@@ -61,7 +61,7 @@ export const PortfolioSliderWrapper = styled.div`
           &::before {
             transform: scale(2);
             background: transparent;
-            box-shadow: inset 0 0 0 1px #01bf71;
+            box-shadow: inset 0 0 0 1px var(--primary);
             opacity: 1;
           }
         }
@@ -69,7 +69,7 @@ export const PortfolioSliderWrapper = styled.div`
 `;
 
 export const PortfolioCard = styled.div`
-  background: #fff;
+  background: var(--white);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@ export const PortfolioCard = styled.div`
 
 export const PortfolioH1 = styled.h1`
   font-size: 2.5rem;
-  color: #007646;
+  color: var(--primary);
   margin-bottom: 20px;
 
   @media ${device.tablet} {
@@ -120,7 +120,7 @@ export const PortfolioDesc = styled.p`
   font-weight: 400;
   line-height: 1.4;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 60px;
 
   @media ${device.tablet} {
@@ -142,7 +142,7 @@ export const PortfolioThumbnail = styled.a`
 
     &::after {
       content: "";
-      background: linear-gradient(180deg,#01bf71 0,#000);
+      background: linear-gradient(180deg,var(--primary) 0,var(--dark));
       position: absolute;
       left: 0;
       right: 0;
@@ -196,10 +196,10 @@ export const PortfolioH4 = styled.h4`
   font-size: 20px;
   font-weight: 700;
   //margin-bottom: 10px;
-  color: #000;
+  color: var(--dark);
 
   ${PortfolioCard}:hover & {
-    color: #fff;
+    color: var(--white);
   }
 `;
 
@@ -207,11 +207,11 @@ export const PortfolioP = styled.p`
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: 600;
-  color: #000;
+  color: var(--dark);
   line-height: 30px;
 
   ${PortfolioCard}:hover & {
-    color: #fff;
+    color: var(--white);
   }
 `;
 
@@ -223,13 +223,13 @@ export const PortfolioBtn = styled.button`
   height: 40px;
   display: inline-block;
   line-height: 34px;
-  border: 2px solid #01bf71;
+  border: 2px solid var(--primary);
   border-radius: 4px;
   font-size: 14px;
   position: relative;
   z-index: 2;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
   background-color: transparent;
   transition: all 0.3s ease-in-out;
 
@@ -240,8 +240,8 @@ export const PortfolioBtn = styled.button`
   }
 
   &:hover {
-    background: #01bf71;
-    color: #010606;
+    background: var(--primary);
+    color: var(--secondary-dark);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }

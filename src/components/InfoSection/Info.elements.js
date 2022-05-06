@@ -3,7 +3,7 @@ import { device } from '../../responsive';
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ darkBg }) => ( darkBg ? '#f9f9f9' : '#000')};
+  background: ${({ darkBg }) => ( darkBg ? '#f8f9fa' : '#020d17')};
   padding: 0;
 
   @media ${device.tablet} {
@@ -99,7 +99,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: var(--primary);
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -113,7 +113,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ darkText }) => ( darkText ? '#f7f8fa' : '#010606')};
+  color: ${({ darkText }) => ( darkText ? '#fff' : '#0d0f10')};
 
   @media ${device.tablet} {
     font-size: 32px;
@@ -130,7 +130,7 @@ export const Subtitle = styled.p`
   margin-bottom: 80px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkDesc }) => (darkDesc ? '#010606' : '#fff')};
+  color: ${({ darkDesc }) => (darkDesc ? '#0d0f10' : '#fff')};
 
   @media ${device.mobileS} {
     margin-bottom: 40px;

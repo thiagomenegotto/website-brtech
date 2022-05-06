@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { device } from '../../responsive';
 
 export const ContactContainer = styled.div`
-  color: #fff;
-  background: ${({ darkBg }) => ( darkBg ? '#f9f9f9' : '#000')};
+  color: var(--white);
+  background: ${({ darkBg }) => ( darkBg ? '#f8f9fa' : '#0d0f10')};
 
   @media ${device.mobileS} {
     padding: 50px 0;
@@ -97,7 +97,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: var(--primary);
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -111,7 +111,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ darkText }) => ( darkText ? '#f7f8fa' : '#010606')};
+  color: ${({ darkText }) => ( darkText ? '#fff' : '#0d0f10')};
 
   @media ${device.tablet} {
     font-size: 32px;
@@ -128,7 +128,7 @@ export const Subtitle = styled.p`
   margin-bottom: 40px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkDesc }) => (darkDesc ? '#010606' : '#fff')};
+  color: ${({ darkDesc }) => (darkDesc ? '#0d0f10' : '#fff')};
 
   @media ${device.tablet} {
     margin-bottom: 0px;
@@ -169,7 +169,7 @@ export const Input = styled.input`
 export const ResultWrap = styled.div`
   width: 100%;
   font-weight: 700;
-  color: #000;
+  color: var(--dark);
   padding-top: 20px;
 `;
 
@@ -192,7 +192,7 @@ export const Textarea = styled.textarea`
 
 export const Label = styled.label`
   margin-top: 20px;
-  color: #000;
+  color: var(--dark);
 `;
 
 export const BtnWrap = styled.div`
@@ -203,10 +203,10 @@ export const BtnWrap = styled.div`
 
 export const Button = styled.input`
     border-radius: 50px;
-    background: ${({primary}) => (primary ? '#01BF71' : '#010606')};
+    background: ${({primary}) => (primary ? '#01BF71' : '#020d17')};
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-    color: ${({ dark }) => (dark ? '#010606' : '#fff')};
+    color: ${({ dark }) => (dark ? '#020d17' : '#fff')};
     font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
     outline: none;
     border: none;
@@ -215,10 +215,11 @@ export const Button = styled.input`
     justify-content: center;
     align-items: center;
     //max-width: 50%;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-      transition: all 0.2s ease-out;
+      transition: all 0.3s ease-out;
       background: ${({primary}) => (primary ? '#fff' : '#01BF71')};
+      color: ${({ dark }) => (dark ? '#020d17' : '#020d17')};
     }
 `;

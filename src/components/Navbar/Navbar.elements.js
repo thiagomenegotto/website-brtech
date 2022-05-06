@@ -5,7 +5,7 @@ import { device } from '../../responsive';
 //import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : '#000')};
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : '#020d17')};
   height: 80px;
   //margin-top: -80px;
   display: flex;
@@ -41,7 +41,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  color: var(--white);
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -52,7 +52,7 @@ export const NavLogo = styled(LinkR)`
   text-decoration: none;
 
   &:hover {
-    color: #01BF71;
+    color: var(--primary);
   }
 
   @media ${device.mobileS} {
@@ -71,7 +71,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: var(--white);
   }
 
   @media ${device.mobileS} {
@@ -82,7 +82,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: var(--white);
   }
 `;
 
@@ -107,7 +107,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: var(--white);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -116,7 +116,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid var(--primary);
   }
 `;
 
@@ -136,10 +136,10 @@ export const NavItemBtn = styled.nav`
 
 export const NavBtnLink = styled.a`
   border-radius: 50px;
-  background: #01bf71;
+  background: var(--primary);
   white-space: nowrap;
   padding: 10px 20px;
-  color: #010606;
+  color: var(--secondary-dark);
   font-size: 16px;
   outline: none;
   border: none;
@@ -149,7 +149,6 @@ export const NavBtnLink = styled.a`
 
   &:hover {
     transition: all 0.3s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: var(--white);
   }
 `;
