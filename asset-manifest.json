@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.js": "/website-brtech/static/js/main.1aaa685b.js",
-    "static/media/svg-2.svg": "/website-brtech/static/media/svg-2.a735a369350afff2a588d0314f78c3c0.svg",
+    "main.css": "/website-brtech/static/css/main.a30ad9bd.css",
+    "main.js": "/website-brtech/static/js/main.27a86058.js",
+    "static/media/port-02.png": "/website-brtech/static/media/port-02.5434b03db81a8ef68aa0.png",
+    "static/media/port-03.png": "/website-brtech/static/media/port-03.b5c2f5f8112c2ceae68f.png",
+    "static/media/port-01.png": "/website-brtech/static/media/port-01.584e00fcce137a0390b9.png",
     "static/media/svg-1.png": "/website-brtech/static/media/svg-1.6b091c53dc53acf4c4ea.png",
     "static/media/svg-8.png": "/website-brtech/static/media/svg-8.fcc20b80904133a1b288.png",
     "static/media/svg-5.png": "/website-brtech/static/media/svg-5.2b60e85f302c4e3e1b24.png",
     "static/media/svg-7.png": "/website-brtech/static/media/svg-7.e452fe66945821d0a1f8.png",
-    "static/media/svg-8.svg": "/website-brtech/static/media/svg-8.14ad520c05f736aa5444d39ae0e103d5.svg",
-    "static/media/svg-4.svg": "/website-brtech/static/media/svg-4.2d6a975cb283f2698dae2d99a718e36a.svg",
-    "static/media/svg-5.svg": "/website-brtech/static/media/svg-5.df475bfbbbb8d29d7490dba850ca7676.svg",
-    "static/media/svg-1.svg": "/website-brtech/static/media/svg-1.7e211a9f0343b107a62cb9e9d38a96e4.svg",
-    "static/media/svg-7.svg": "/website-brtech/static/media/svg-7.514dff21071c9b9a3c38e5474303a68f.svg",
+    "static/media/slick.svg": "/website-brtech/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/website-brtech/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/website-brtech/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/website-brtech/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/website-brtech/index.html",
-    "main.1aaa685b.js.map": "/website-brtech/static/js/main.1aaa685b.js.map"
+    "main.a30ad9bd.css.map": "/website-brtech/static/css/main.a30ad9bd.css.map",
+    "main.27a86058.js.map": "/website-brtech/static/js/main.27a86058.js.map"
   },
   "entrypoints": [
-    "static/js/main.1aaa685b.js"
+    "static/css/main.a30ad9bd.css",
+    "static/js/main.27a86058.js"
   ]
 }
