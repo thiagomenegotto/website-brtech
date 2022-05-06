@@ -3,84 +3,93 @@ import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { device } from '../../responsive';
 
 export const HeroContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 200px 0;
-  max-height: 900px;
   position: relative;
   z-index: 1;
   background: ${({ lightBg }) => (lightBg ? '#fff' : '#000')};
+  padding: 0;
+`;
 
+export const HeroWrapper = styled.div`
+  display: grid;
+  z-index: 1;
+  max-height: 900px;
+  width: 100%;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 20px;
+  justify-content: center;
 
-  @media ${device.tablet} {
+  @media ${device.tablet}{
     padding: 100px 0;
     max-height: 1000px;
   }
 
-  @media ${device.mobileS} {
-    padding: 100px 0;
+  @media ${device.mobileS}{
+    padding: 50px 0 100px 0;
     max-height: 1000px;
   }
-  /* :before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-    z-index: 2;
-  } */
 `;
 
 export const HeroRow = styled.div`
-  display: flex;
-  margin: 0;
-  flex-wrap: wrap;
+  margin: 0 20px;
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
-  z-index: 3;
-`;
-
-export const HeroColumn = styled.div`
-  margin-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 1;
-  max-width: 50%;
-  flex-basis: 50%;
+  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
   @media ${device.tablet} {
-    max-width: 100%;
-    flex-basis: 100%;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1 col2'` : `'col1 col1' 'col2 col2'`)};
   }
 
   @media ${device.mobileS} {
-    max-width: 100%;
-    margin-bottom: 20px;
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1 col2'` : `'col1 col1' 'col2 col2'`)};
+  }
+`;
+
+export const Column1 = styled.div`
+  margin-bottom: 20px;
+  padding: 0 10px;
+  grid-area: col1;
+
+  @media ${device.tablet} {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  @media ${device.mobileS} {
+    margin-bottom: 0;
+    padding: 0;
+  }
+`;
+
+export const Column2 = styled.div`
+  margin-bottom: 20px;
+  padding: 0 10px;
+  grid-area: col2;
+
+  @media ${device.tablet} {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  @media ${device.mobileS} {
+    margin-bottom: 0;
+    padding: 0;
   }
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 585px;
+  padding-top: 0;
+  padding-bottom: 40px;
 
   @media ${device.tablet} {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 
   @media ${device.mobileS} {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 `;
 
@@ -141,17 +150,24 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 `;
 
 export const ImgWrapper = styled.div`
-  max-width: 555px;
+  max-width: 565px;
+  height: 100%;
+  padding: 0;
   display: flex;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
   align-items: center;
+
+  @media ${device.tablet} {
+    padding: 0;
+  }
+
+  @media ${device.mobileS} {
+    padding: 0;
+  }
 `;
 
 export const Img = styled.img`
   padding-right: 0;
-  border: 0;
-  max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
-  max-height: 450px;
+  width: 100%;
+  margin: 0 0 10px 0;
 `;

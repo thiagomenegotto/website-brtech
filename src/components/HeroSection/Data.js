@@ -10,7 +10,7 @@ export const heroData = {
   description:
     'Somos uma agência com o foco nos negócios digitais, visando médios e pequenos negócios locais.',
   buttonLabel: 'Comece agora',
-  imgStart: '',
+  imgStart: false,
   img: require('../../images/svg-1.png'),
   alt: 'Agência',
   start: ''

@@ -39,22 +39,22 @@ export const ServiceWrapper = styled.div`
 `;
 
 export const ServiceCard = styled.div`
-  background: #5796CB;
+  background: #f6f6f6;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   border-radius: 10px;
-  max-height: 340px;
-  height: 300px;
+  max-height: 360px;
+  height: 100%;
   padding: 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  transition: all 0.2 ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    background-color: #007646;
   }
 
   @media ${device.tablet} {
@@ -70,10 +70,15 @@ export const ServiceCard = styled.div`
   }
 `;
 
-export const ServiceIcon = styled.img`
-  height: 160px;
-  width: 160px;
-  margin-bottom: 10px;
+export const ServiceIcon = styled.div`
+  font-size: 54px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #007646;
+
+  ${ServiceCard}:hover & {
+    color: #fff;
+  }
 `;
 
 export const ServiceH1 = styled.h1`
@@ -93,7 +98,7 @@ export const ServiceH1 = styled.h1`
 `;
 
 export const ServiceDesc = styled.p`
-  max-width: 400px;
+  max-width: 390px;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.4;
@@ -115,12 +120,20 @@ export const ServiceDesc = styled.p`
 export const ServiceH2 = styled.h2`
   font-size: 18px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #000;
+
+  ${ServiceCard}:hover & {
+    color: #fff;
+  }
 `;
 
 export const ServiceP = styled.p`
   max-width: 250px;
   font-size: 14px;
-  text-align: center;
-  color: #fff;
+  //text-align: center;
+  color: #000;
+
+  ${ServiceCard}:hover & {
+    color: #fff;
+  }
 `;

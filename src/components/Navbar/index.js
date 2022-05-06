@@ -81,13 +81,13 @@ const Navbar = ({ toggle }) => {
                 >Portfolio</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='pricing'
+                <NavLinks to='contact'
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}
-                >Orçamneto</NavLinks>
+                >Orçamento</NavLinks>
               </NavItem>
             </NavMenu>
             <NavItemBtn>

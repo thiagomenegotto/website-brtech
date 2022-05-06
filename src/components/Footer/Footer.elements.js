@@ -7,20 +7,20 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  padding: 48px 30px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1150px;
+  max-width: 1140px;
   margin: 0 auto;
 
   @media ${device.tablet} {
-    padding: 48px 20px;
+    padding: 40px 20px;
   }
 
   @media ${device.mobileS} {
-    padding: 48px 0px;
+    padding: 40px 0px;
   }
 `;
 
@@ -32,7 +32,7 @@ export const FooterLinksContainer = styled.div`
 
 
   @media ${device.mobileS} {
-    padding-top: 32px;
+    padding-top: 40px;
   }
 `;
 
@@ -99,6 +99,7 @@ export const SocialMediaWrap = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 40px auto 0 auto;
+  padding: 0 20px;
 
   @media ${device.tablet} {
     margin: 40px 10px 0 10px;

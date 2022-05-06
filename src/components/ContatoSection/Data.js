@@ -1,5 +1,5 @@
 export const contactData = {
-  id: 'pricing',
+  id: 'contact',
   darkBg: true,
   darkText: false,
   lightTextDesc: false,

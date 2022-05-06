@@ -4,6 +4,11 @@ import { device } from '../../responsive';
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ darkBg }) => ( darkBg ? '#f9f9f9' : '#000')};
+  padding: 0;
+
+  @media ${device.tablet} {
+    padding: 0;
+  }
 
   @media ${device.mobileS} {
     padding: 50px 0;
@@ -15,15 +20,15 @@ export const InfoWrapper = styled.div`
   z-index: 1;
   max-height: 800px;
   width: 100%;
-  max-width: 1150px;
+  max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
-  padding: 150px 0 100px 0;
+  padding: 100px 20px;
   justify-content: center;
 
   @media ${device.tablet}{
-    padding: 100px 0 100px 0;
-    max-height: 1000px;
+    padding: 50px 0 50px 0;
+    max-height: 1200px;
   }
 
   @media ${device.mobileS}{
@@ -32,6 +37,7 @@ export const InfoWrapper = styled.div`
 `;
 
 export const InfoRow = styled.div`
+  margin: 0 20px;
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -48,35 +54,47 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 20px;
-  padding: 0 15px;
+  padding: 0 10px;
   grid-area: col1;
 
   @media ${device.tablet} {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   @media ${device.mobileS} {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    padding: 0;
   }
 `;
 
 export const Column2 = styled.div`
   margin-bottom: 20px;
-  padding: 0 15px;
+  padding: 0 10px;
   grid-area: col2;
-`;
-
-export const TextWrapper = styled.div`
-  max-width: 540px;
-  padding-top: 0;
-  padding-bottom: 60px;
 
   @media ${device.tablet} {
-    padding-bottom: 60px;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   @media ${device.mobileS} {
-    padding-bottom: 60px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+`;
+
+export const TextWrapper = styled.div`
+  max-width: 585px;
+  padding-top: 0;
+  padding-bottom: 40px;
+
+  @media ${device.tablet} {
+    padding-bottom: 80px;
+  }
+
+  @media ${device.mobileS} {
+    padding-bottom: 80px;
   }
 `;
 
@@ -125,7 +143,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 565px;
   height: 100%;
 `;
 

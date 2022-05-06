@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { Button } from '../Button.elements';
 import {
   HeroContainer,
+  HeroWrapper,
   HeroRow,
-  HeroColumn,
+  Column1,
+  Column2,
   TextWrapper,
   TopLine,
   Heading,
@@ -41,8 +43,9 @@ const HeroSection = ({
   return (
     <>
       <HeroContainer lightBg={lightBg} id={id}>
+        <HeroWrapper>
         <HeroRow imgStart={imgStart}>
-          <HeroColumn>
+          <Column1>
             <TextWrapper>
               <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
               <Heading lightText={lightText}>{headLine}</Heading>
@@ -59,13 +62,14 @@ const HeroSection = ({
                 </Button>
               </BtnWrap>
             </TextWrapper>
-          </HeroColumn>
-          <HeroColumn>
+          </Column1>
+          <Column2>
             <ImgWrapper start={start}>
               <Img src={img} alt={alt} />
             </ImgWrapper>
-          </HeroColumn>
+          </Column2>
         </HeroRow>
+        </HeroWrapper>
       </HeroContainer>
     </>
   );

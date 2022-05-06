@@ -16,10 +16,10 @@ export const ContactWrapper = styled.div`
   z-index: 1;
   max-height: 800px;
   width: 100%;
-  max-width: 1150px;
+  max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
-  padding: 100px 0;
+  padding: 100px 20px;
   justify-content: center;
 
   @media ${device.tablet}{
@@ -49,10 +49,13 @@ export const ContactRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 20px;
+  max-width: 585px;
+  width: 100%;
   padding: 0 20px;
   grid-area: col1;
 
   @media ${device.tablet} {
+    padding: 0 10px;
     margin-bottom: 40px;
   }
 
@@ -64,10 +67,13 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
   margin-bottom: 20px;
-  padding: 0 20px;
+  max-width: 585px;
+  width: 100%;
+  padding: 0 10px;
   grid-area: col2;
 
   @media ${device.tablet} {
+    padding: 0 10px;
     margin-bottom: 0px;
   }
 
@@ -78,16 +84,15 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
-  padding-top: 0;
-  padding-bottom: 60px;
+  max-width: 585px;
+  padding: 0 10px 80px 10px;
 
   @media ${device.tablet} {
     padding-bottom: 0px;
   }
 
   @media ${device.mobileS} {
-    padding-bottom: 0px;
+    padding: 0px;
   }
 `;
 
