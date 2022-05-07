@@ -16,10 +16,10 @@ export const ContactWrapper = styled.div`
   z-index: 1;
   max-height: 800px;
   width: 100%;
-  max-width: 1140px;
+  max-width: var(--container-max-width);
   margin-right: auto;
   margin-left: auto;
-  padding: 100px 20px;
+  padding: 100px 0;
   justify-content: center;
 
   @media ${device.tablet}{

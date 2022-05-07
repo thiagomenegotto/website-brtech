@@ -29,6 +29,8 @@ const GlobalStyle = createGlobalStyle`
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: 'Source Sans Pro', sans-serif;
+
+    --container-max-width: 1140px;
   }
 `;
 

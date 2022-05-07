@@ -14,10 +14,10 @@ export const HeroWrapper = styled.div`
   z-index: 1;
   max-height: 900px;
   width: 100%;
-  max-width: 1140px;
+  max-width: var(--container-max-width);
   margin-right: auto;
   margin-left: auto;
-  padding: 100px 20px;
+  padding: 100px 0;
   justify-content: center;
 
   @media ${device.tablet}{
@@ -49,7 +49,7 @@ export const HeroRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 20px;
-  padding: 0 10px;
+  padding: 0;
   grid-area: col1;
 
   @media ${device.tablet} {
@@ -65,7 +65,7 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
   margin-bottom: 20px;
-  padding: 0 10px;
+  padding: 0;
   grid-area: col2;
 
   @media ${device.tablet} {

@@ -12,7 +12,7 @@ export const FooterWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1140px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
 
   @media ${device.tablet} {

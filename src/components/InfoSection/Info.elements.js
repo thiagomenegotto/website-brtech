@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../responsive';
 
 export const InfoContainer = styled.div`
-  color: #fff;
+  color: var(--white);
   background: ${({ darkBg }) => ( darkBg ? '#f8f9fa' : '#020d17')};
   padding: 0;
 
@@ -20,10 +20,10 @@ export const InfoWrapper = styled.div`
   z-index: 1;
   max-height: 800px;
   width: 100%;
-  max-width: 1140px;
+  max-width: var(--container-max-width);
   margin-right: auto;
   margin-left: auto;
-  padding: 100px 20px;
+  padding: 100px 0;
   justify-content: center;
 
   @media ${device.tablet}{
@@ -54,7 +54,7 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 20px;
-  padding: 0 10px;
+  padding: 0;
   grid-area: col1;
 
   @media ${device.tablet} {
@@ -70,7 +70,7 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
   margin-bottom: 20px;
-  padding: 0 10px;
+  padding: 0;
   grid-area: col2;
 
   @media ${device.tablet} {

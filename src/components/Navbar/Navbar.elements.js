@@ -32,7 +32,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   margin: 0 20px;
-  max-width: 1140px;
+  max-width: var(--container-max-width);
 
   @media ${device.tablet} {
     max-width: 620px;

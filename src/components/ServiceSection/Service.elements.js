@@ -20,13 +20,14 @@ export const ServiceContainer = styled.div`
 `;
 
 export const ServiceWrapper = styled.div`
-  max-width: 1000px;
+  max-width: var(--container-max-width);
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 16px;
-  padding: 0 50px;
+  grid-gap: 20px;
+  padding: 0 120px;
 
   @media ${device.tablet} {
     grid-template-columns: 1fr 1fr;
@@ -46,6 +47,7 @@ export const ServiceCard = styled.div`
   align-items: flex-start;
   border-radius: 10px;
   max-height: 360px;
+  width: 280px;
   height: 100%;
   padding: 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);

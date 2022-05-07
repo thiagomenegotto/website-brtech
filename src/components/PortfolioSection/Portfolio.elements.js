@@ -21,7 +21,7 @@ export const PortfolioContainer = styled.div`
 `;
 
 export const PortfolioWrapper = styled.div`
-  max-width: 1150px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ export const PortfolioWrapper = styled.div`
 `;
 
 export const PortfolioSliderWrapper = styled.div`
-  max-width: 1150px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
 
   .slick-slider {
