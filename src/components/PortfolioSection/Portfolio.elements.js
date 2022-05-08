@@ -66,6 +66,14 @@ export const PortfolioSliderWrapper = styled.div`
           }
         }
     }
+
+    @media ${device.tablet} {
+      max-width: 710px;
+    }
+
+    @media ${device.mobileS} {
+      max-width: 340px;
+    }
 `;
 
 export const PortfolioCard = styled.div`
@@ -92,9 +100,11 @@ export const PortfolioCard = styled.div`
   }
 
   @media ${device.tablet} {
+    justify-content: center;
   }
 
   @media ${device.mobileS} {
+    justify-content: center;
   }
 `;
 

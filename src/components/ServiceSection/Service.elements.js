@@ -31,11 +31,12 @@ export const ServiceWrapper = styled.div`
 
   @media ${device.tablet} {
     grid-template-columns: 1fr 1fr;
+    padding: 0 100px;
   }
 
   @media ${device.mobileS} {
     grid-template-columns: 1fr;
-    padding: 0;
+    padding: 0 70px;
   }
 `;
 
@@ -60,15 +61,17 @@ export const ServiceCard = styled.div`
   }
 
   @media ${device.tablet} {
-    max-width: 360px;
+    max-width: 260px;
+    width: 100%;
+    height: 200px;
     padding: 10px;
-    height: 280px;
   }
 
   @media ${device.mobileS} {
-    max-width: 320px;
+    max-width: 260px;
+    width: 100%;
+    height: 200px;
     padding: 10px;
-    height: 280px;
   }
 `;
 

@@ -8,7 +8,7 @@ export const heroData = {
   topLine: 'Bem vindo à BrTech',
   headLine: 'Aumente as vendas do seu negócio',
   description:
-    'Somos uma agência com o foco nos negócios digitais, visando médios e pequenos negócios locais.',
+    'Chame mais atenção e tenha uma maior interação de seu negócio nas redes sociais.',
   buttonLabel: 'Comece agora',
   imgStart: false,
   img: require('../../images/svg-1.png'),
